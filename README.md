@@ -1,21 +1,24 @@
-# Bike-Sharing Proyek Analisis Data
+# Proyek Analisis Data Bike-Sharing
 
-Repository ini berisi proyek data analytics yang saya kerjakan. Deployment in Streamlit.
+Repositori ini berisi proyek analitik data yang saya kembangkan, dengan penerapan menggunakan Streamlit.
 
 ## Deskripsi
 
-Proyek ini bertujuan untuk menganalisis data pada **Bike Sharing Dataset**. Tujuan akhirnya adalah untuk menghasilkan wawasan dan informasi yang berguna dari data yang dianalisis.
+Projek ini akan menganalisis perkembangan kinerja perusahaan dalam beberapa tahun terakhir, mengidentifikasi puncak aktivitas penyewaan sepeda, serta membandingkan jumlah pengguna terdaftar dengan penyewa kasual. Temuan ini diharapkan memberikan gambaran perilaku konsumen dan kinerja perusahaan secara komprehensif.
 
 ## Struktur Direktori
 
-- `/data`: Direktori ini berisi data yang digunakan dalam proyek, dalam format `.csv`.
-- `/dashboard`: Direktori ini berisi `main.py` yang digunakan untuk membuat dashboard hasil analisis data.
-- `notebook.ipynb`: File ini digunakan untuk melakukan analisis data.
+- `/data`: Folder ini berisi data yang digunakan dalam proyek, dalam format `.csv`.
+- `/dashboard`: Folder ini menyimpan `main.py` yang digunakan untuk membangun dashboard hasil analisis.
+- `notebook.ipynb`: File ini digunakan untuk melakukan analisis data secara mendetail.
 
 ## Instalasi
 
-Pastikan Anda memiliki lingkungan Python yang sesuai dan pustaka-pustaka yang diperlukan. Anda dapat menginstal pustaka-pustaka tersebut dengan menjalankan perintah berikut:
+Pastikan Anda memiliki lingkungan Python yang sesuai beserta pustaka-pustaka yang dibutuhkan. Anda dapat menginstal pustaka-pustaka tersebut dengan menjalankan perintah berikut:
 
 ```bash
-pip install streamlit
+cd submission
 pip install -r requirements.txt
+
+cd dashboard
+streamlit run dashboard.py
