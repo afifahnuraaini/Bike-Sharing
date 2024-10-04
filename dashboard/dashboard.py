@@ -6,8 +6,8 @@ import streamlit as st
 from scipy import stats
 
 # Load data
-day_df = pd.read_csv('cleaned_day.csv')
-hour_df = pd.read_csv('cleaned_hour.csv')
+day_df = pd.read_csv('https://raw.githubusercontent.com/afifahnuraaini/Bike-Sharing/refs/heads/main/dashboard/cleaned_day.csv')
+hour_df = pd.read_csv('https://raw.githubusercontent.com/afifahnuraaini/Bike-Sharing/refs/heads/main/dashboard/cleaned_hpur.csv')
 
 # Data preprocessing
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
