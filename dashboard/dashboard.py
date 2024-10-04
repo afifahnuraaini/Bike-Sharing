@@ -6,8 +6,8 @@ import streamlit as st
 from scipy import stats
 
 # Load data
-day_df = pd.read_csv('day.csv')
-hour_df = pd.read_csv('hour.csv')
+day_df = pd.read_csv('cleaned_day.csv')
+hour_df = pd.read_csv('cleaned_hour.csv')
 
 # Data preprocessing
 hour_df.drop(['workingday'], axis=1, inplace=True)
