@@ -6,23 +6,6 @@ Repositori ini berisi proyek analitik data yang saya kembangkan, dengan penerapa
 
 Projek ini akan menganalisis perkembangan kinerja perusahaan dalam beberapa tahun terakhir, mengidentifikasi puncak aktivitas penyewaan sepeda, serta membandingkan jumlah pengguna terdaftar dengan penyewa kasual. Temuan ini diharapkan memberikan gambaran perilaku konsumen dan kinerja perusahaan secara komprehensif.
 
-## Struktur Direktori
-
-.
-├── Dashboard
-│   ├── cleaned_day.csv
-│   └── cleaned_hour.csv
-│   └── dashboard.py
-├── Data
-│   ├── day.csv
-|   └── hour.csv
-├── preview
-|   ├── capt 1.jpeg
-|   ├── capt 1.jpeg
-|   └── capt 1.jpeg
-├── README.md
-├── notebook.ipynb
-└── requirements.txt
 
 ## Instalasi
 ## Setup Environment - Shell/Terminal
