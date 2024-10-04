@@ -10,9 +10,6 @@ day_df = pd.read_csv('cleaned_day.csv')
 hour_df = pd.read_csv('cleaned_hour.csv')
 
 # Data preprocessing
-hour_df.drop(['workingday'], axis=1, inplace=True)
-day_df.drop(['workingday'], axis=1, inplace=True)
-
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 day_df.rename(columns={'yr': 'year', 'mnth': 'month', 'weekday': 'one_of_week',
@@ -28,12 +25,6 @@ def get_category_days(one_of_week):
 
 hour_df["category_days"] = hour_df["one_of_week"].apply(get_category_days)
 day_df["category_days"] = day_df["one_of_week"].apply(get_category_days)
-
-# Calculate average usage
-workingday_data = day_df[day_df['category_days'] == 'weekdays']
-weekend_data = day_df[day_df['category_days'] == 'weekend']
-avg_workingday = workingday_data['count_cr'].mean()
-avg_weekend = weekend_data['count_cr'].mean()
 
 # Streamlit Dashboard
 st.title("")
