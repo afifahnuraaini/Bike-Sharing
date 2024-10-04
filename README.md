@@ -10,8 +10,8 @@ Projek ini akan menganalisis perkembangan kinerja perusahaan dalam beberapa tahu
 ## Instalasi
 ## Setup Environment - Shell/Terminal
 ```bash
-mkdir Submission
-cd Submission
+git clone https://github.com/afifahnuraaini/Bike-Sharing.git
+cd Bike-Sharing
 pipenv install
 pipenv shell
 pip install -r requirements.txt
